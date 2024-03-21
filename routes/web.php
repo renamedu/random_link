@@ -17,7 +17,7 @@ use App\Http\Controllers\CreateController;
 */
 
 
-Route::get('/api/link', CreateController::class)->name('create');
+Route::post('/api/link', CreateController::class)->name('create');
 Route::get('/{shortlink}', ShowController::class)->name('show');
 
 
