@@ -10,7 +10,7 @@ class LinkService
 {
     public function generateLink($url)
     {
-        $generated_code = Str::random(32);
+        $generated_code = Str::random(8);
 
         try {
             DB::beginTransaction();
